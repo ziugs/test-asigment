@@ -14,8 +14,13 @@
             {
                 $sku = $db->check($_POST['sku']);
                 $price = $db->check($_POST['price']);
-                $product = $db->check($_POST['product']);
-                $body = $db->check($_POST['body']);
+                $product = $db->check($_POST['product']);  
+                $b1 = $db->check($_POST['b1']); 
+                $b2 = $db->check($_POST['b2']); 
+                $b2 = $db->check($_POST['b3']);              
+                //$body = $db->check($_POST['body']);
+                $body = $b1." ".$b2." ".$b3;
+                
 
                 if($this->insert_record($sku, $price, $product, $body))
                 {

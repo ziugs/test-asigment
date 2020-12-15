@@ -38,17 +38,17 @@
         <script>
     var dvdTemplate =
         '<label>Size MB</label>' +
-        '<input type="text" name="body" class="form-control" required>';
+        '<input type="text" name="b1" class="form-control" required>';
     var bookTemplate =
         '<label>Weigth (KG)</label>' +
-        '<input type="text" name="body" class="form-control" required>';
+        '<input type="text" name="b1" class="form-control" required>';
     var furTemplte =
         '<label>Heigth (CM)</label>' +
-        '<input type="text" name="" class="form-control" required>' +
+        '<input type="text" name="b1" class="form-control" required>' +
         '<label>Width (CM)</label>' +
-        '<input type="text" name="" class="form-control" required>' +
+        '<input type="text" name="b2" class="form-control" required>' +
         '<label>Length (CM)</label>' +
-        '<input type="text" name="" class="form-control" required>' +
+        '<input type="text" name="b3" class="form-control" required>' +
         '<br>' +
         '<p>Please provide demensions</p>';
 
@@ -63,7 +63,6 @@
     form.elements.dropdown.onchange = function() {
         var form = this.form;
         console.log(form);
-        //form.elements.showtax.value = taxCodes[this.value];
         document.getElementById("demo").innerHTML = templates[this.value];
     };
     </script>
